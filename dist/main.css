@@ -28,9 +28,11 @@ dd {
 }
 
 /* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
-ul[role="list"],
-ol[role="list"] {
+ul,
+ol {
     list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
 /* Set core body defaults */
@@ -153,6 +155,10 @@ body {
     padding: 0;
     font-family: sans-serif, Arial, Helvetica;
 
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+
     --max-width: 1280px;
     --color-primary: #f5f5f5;
     --color-secondary: #111e27;
@@ -192,8 +198,35 @@ header nav button {
     background-color: #444;
     color: #fff;
     transition: background-color 0.3s ease;
+
 }
 
 .content-btn:hover {
     background-color: #555;
+}
+
+.content-btn.active {
+    background-color: #9f4d4d;
+}
+
+/* keep footer at the bottom */
+html {
+    height: 100%;
+}
+
+#content {
+    flex: 1;
+    padding: 2rem 2rem 3rem;
+    max-width: var(--max-width);
+    margin: 0 auto;
+}
+
+footer {
+    background-color: var(--color-secondary);
+    padding: 1rem;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
 }
