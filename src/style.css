@@ -73,3 +73,66 @@ h1 {
     font-size: 1.1rem;
     color: #873323;
 }
+
+#home .explore .explore-message {
+    margin-top: 2rem;
+    text-align: center;
+    color: #fff7f7;
+    font-style: italic;
+}
+
+/* Menu page */
+
+#menu h2 {
+    margin-bottom: 2.5rem;
+    font-size: 2rem;
+    text-align: center;
+    color: #faecec;
+}
+
+#menu .menu-sections {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: center;
+}
+
+
+
+#menu .menu-sections .menu-section h3 {
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+    color: #faecec;
+}
+
+#menu .menu-sections .menu-section .section-items{
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+#menu .menu-sections .menu-section .section-items .menu-item {
+    max-width: 300px;
+}
+
+.menu-section .section-items .menu-item .item-name {
+    font-size: 1.1rem;
+    color: #e5b8af;
+    height: 3rem;
+}
+
+.menu-section .section-items .menu-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+    margin: 1rem 0;
+}
+
+.menu-section .section-items .menu-item .item-description{
+    margin: 1rem 0;
+    font-size: 1rem;
+    color: #faecec;
+}

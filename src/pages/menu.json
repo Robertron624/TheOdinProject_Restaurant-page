@@ -1,0 +1,62 @@
+[
+    {
+        "name": "Appetizers",
+        "items": [
+            {
+                "name": "Savory Bruschetta",
+                "imageSrc": "./images/savory-bruschetta.jpg",
+                "description": "Freshly diced tomatoes, basil, and feta on a crisp baguette."
+            },
+            {
+                "name": "Stuffed Mushrooms",
+                "imageSrc": "./images/stuffed-mushrooms.jpeg",
+                "description": "Creamy spinach and artichoke filling, topped with Parmesan."
+            }
+        ]
+    },
+    {
+        "name": "Main Course",
+        "items": [
+            {
+                "name": "Grilled Salmon with Lemon Herb Sauce",
+                "imageSrc": "./images/grilled-salmon.jpeg",
+                "description": "Served with roasted vegetables and garlic mashed potatoes."
+            },
+            {
+                "name": "Wild Mushroom Risotto",
+                "imageSrc": "./images/wild-mushroom-risotto.jpeg",
+                "description": "Arborio rice cooked to perfection with a medley of wild mushrooms."
+            }
+        ]
+    },
+    {
+        "name": "Desserts",
+        "items": [
+            {
+                "name": "Decadent Chocolate Fondue",
+                "imageSrc": "./images/chocolate-fondue.jpg",
+                "description": "A sinfully rich chocolate fondue served with fresh fruit and marshmallows."
+            },
+            {
+                "name": "Vanilla Bean Crème Brûlée",
+                "imageSrc": "./images/creme-brulee.jpg",
+                "description": "Silky smooth custard with a perfectly caramelized sugar crust."
+            }
+        ]
+    },
+    {
+        "name": "Beverages",
+        "items": [
+            {
+                "name": "Mango Tango Smoothie",
+                "imageSrc": "./images/mango-tango-smoothie.jpg",
+                "description": "A refreshing blend of fresh mango, banana, and orange juice."
+            },
+            {
+                "name": "Cucumber Mint Cooler",
+                "imageSrc": "./images/cucumber-mint-cooler.jpg",
+                "description": "A revitalizing mix of cucumber, mint, and sparkling water."
+            }
+        ]
+    }
+]
