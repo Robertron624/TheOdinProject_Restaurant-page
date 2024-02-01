@@ -32,6 +32,9 @@ function getExploreList() {
 
     const exploreList = document.createElement("ul");
     exploreList.classList.add("explore-list");
+    exploreList.classList.add("flex")
+    exploreList.classList.add("flex-col")
+    exploreList.classList.add("align-center")
 
     exploreListItemsContent.forEach((item) => {
         const listItem = document.createElement("li");

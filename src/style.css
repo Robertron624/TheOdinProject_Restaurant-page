@@ -44,7 +44,6 @@ h1 {
 }
 
 #home .explore ul.explore-list {
-    display: flex;
     gap: 1rem;
     justify-content: center;
     margin-top: 2rem;
@@ -53,6 +52,11 @@ h1 {
 
 #home .explore ul.explore-list li {
     max-width: 300px;
+    background-color: #fefefe;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+    color: #281d1b;
 }
 
 #home .explore ul.explore-list li img {
@@ -168,7 +172,53 @@ h1 {
     word-break: break-all;
 }
 
+#contact .working-hours {
+    margin-top: 2rem;
+    text-align: center;
+}
+
+#contact .working-hours h3 {
+    font-size: 1.1rem;
+    color: #e16666;
+}
+
+#contact .working-hours .hours-wrapper {
+    margin-top: 1.5rem;
+}
+
+#contact .working-hours .hours-wrapper p:first-child {
+    margin-bottom: 1rem;
+}
+
+#contact .social-networks {
+    margin-top: 2rem;
+    text-align: center;
+}
+
+#contact .social-networks h3 {
+    font-size: 1.1rem;
+    color: #e16666;
+    margin-bottom: 1.2rem;
+}
+
+#contact .social-networks p {
+    font-size: 1rem;
+    color: #faecec;
+    font-style: italic;
+}
+
+#contact .social-networks .social-networks-list
+ {
+    justify-content: center;
+    margin: 1.5rem 0;
+}
+
 @media (min-width: 720px){
+
+    #home .explore ul.explore-list {
+        flex-direction: row;
+        align-items: unset;
+    }
     #contact .contact-info {
         flex-direction: row;
         align-items: flex-start;
