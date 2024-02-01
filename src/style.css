@@ -136,3 +136,41 @@ h1 {
     font-size: 1rem;
     color: #faecec;
 }
+
+/* Contact content */
+
+#contact h2 {
+    margin-bottom: 2.5rem;
+    font-size: 2rem;
+    text-align: center;
+    color: #faecec;
+}
+
+#contact .contact-info {
+    gap: 1.2rem;
+    flex-direction: column;
+}
+
+#contact .contact-info .contact-item {
+    max-width: 200px;
+    width: 65%;
+}
+
+#contact .contact-info .contact-item p:first-child {
+    font-size: 1.2rem;
+    color: #e1a9a9;
+    margin-bottom: 0.5rem;
+}
+
+#contact .contact-info .contact-item p:last-child {
+    font-size: 1rem;
+    color: #faecec;
+    word-break: break-all;
+}
+
+@media (min-width: 720px){
+    #contact .contact-info {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+}

@@ -1,3 +1,5 @@
+"use strict";
+
 import menuData from "./menu.json";
 
 function getMenuItem(item) {

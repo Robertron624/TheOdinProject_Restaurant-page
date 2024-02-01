@@ -176,7 +176,7 @@ header {
 }
 
 header .logo {
-    font-size: 5rem;
+    font-size: 4rem;
     text-align: center;
     font-family: fantasy;
 }
@@ -221,6 +221,12 @@ html {
     margin: 0 auto;
 }
 
+#content h1 {
+    margin-bottom: 2.5rem;
+    font-size: 2.5rem;
+    text-align: center;
+}
+
 footer {
     background-color: var(--color-secondary);
     padding: 1rem;
@@ -229,4 +235,12 @@ footer {
     justify-content: center;
     align-items: center;
     gap: 1rem;
+}
+
+@media screen and (min-width: 720px) {
+
+    header .logo {
+        font-size: 5rem;
+    }
+    
 }

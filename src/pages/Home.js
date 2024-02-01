@@ -1,3 +1,5 @@
+"use strict";
+
 import SignatureDishesImage from "../assets/images/signature-dishes.jpg";
 import AmbianceImage from "../assets/images/ambiance.jpg";
 import WinePairingsImage from "../assets/images/wine-pairings.jpg";
