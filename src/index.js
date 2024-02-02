@@ -5,6 +5,7 @@ import Menu from "./pages/Menu";
 import Contact from "./pages/Contact";
 
 import "./style.css";
+import "./main.css";
 
 const contentBtns = document.querySelectorAll(".content-btn");
 const pageContent = document.querySelector("#content");
