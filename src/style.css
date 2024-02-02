@@ -209,8 +209,12 @@ h1 {
 
 #contact .social-networks .social-networks-list
  {
-    justify-content: center;
-    margin: 1.5rem 0;
+    max-width: 300px;
+    margin: 1.5rem auto;
+}
+
+#contact .social-networks .social-networks-list .social-network-item:nth-of-type(2) {
+    filter: drop-shadow(2px 4px 6px rgb(190, 54, 54));
 }
 
 @media (min-width: 720px){

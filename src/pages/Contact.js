@@ -1,6 +1,9 @@
 "use strict";
 
 import socials from "./socials.json";
+import FacebookIcon from "../assets/icons/square-facebook.svg";
+import InstagramIcon from "../assets/icons/square-instagram.svg";
+import TwitterIcon from "../assets/icons/square-twitter.svg";
 
 function getContactItem(label, text) {
     const contactItem = document.createElement("div");
@@ -72,16 +75,24 @@ function getWorkingHours() {
 function getSocialNetworkItem(network) {
     const { name, url } = network;
 
+    const socialNetworkMap = {
+        facebook: FacebookIcon,
+        instagram: InstagramIcon,
+        twitter: TwitterIcon,
+    };
+
     const networkItem = document.createElement("li");
     networkItem.classList.add("social-network-item");
 
     const networkLink = document.createElement("a");
     networkLink.href = url;
 
-    const networkIcon = document.createElement("i");
-    networkIcon.classList.add("fab");
-    networkIcon.classList.add(`fa-${name}`);
-    networkIcon.classList.add("fa-2x");
+    const networkIcon = document.createElement("img");
+    networkIcon.src = socialNetworkMap[name];
+    networkIcon.alt = `${name} icon`;
+    
+    networkIcon.width = 30;
+    networkIcon.height = 30;
 
     networkLink.appendChild(networkIcon);
     networkItem.appendChild(networkLink);
@@ -99,7 +110,7 @@ function getSocialNetworks() {
     const socialNetworksList = document.createElement("ul");
     socialNetworksList.classList.add("social-networks-list");
     socialNetworksList.classList.add("flex");
-    socialNetworksList.classList.add("justify-center");
+    socialNetworksList.classList.add("justify-between");
 
     socials.forEach((network) => {
         const networkItem = getSocialNetworkItem(network);
