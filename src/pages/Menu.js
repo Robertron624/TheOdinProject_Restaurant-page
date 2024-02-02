@@ -2,6 +2,16 @@
 
 import menuData from "./menu.json";
 
+const processedMenuData = menuData.map(section => {
+    return {
+      ...section,
+      items: section.items.map(item => ({
+        ...item,
+        imageSrc: require(`../assets/images/${item.imageSrc}`),
+      })),
+    };
+  });
+
 function getMenuItem(item) {
     const menuItem = document.createElement("div");
     menuItem.classList.add("menu-item");
@@ -17,7 +27,7 @@ function getMenuItem(item) {
     menuItem.appendChild(image);
 
     const description = document.createElement("p");
-    description.classList.add("item-escription");
+    description.classList.add("item-description");
     description.textContent = item.description;
     menuItem.appendChild(description);
 
@@ -59,7 +69,7 @@ function Menu() {
     const sections = document.createElement("div");
     sections.classList.add("menu-sections");
 
-    menuData.forEach((section) => {
+    processedMenuData.forEach((section) => {
         const menuSection = getMenuSection(section.name, section.items);
         sections.appendChild(menuSection);
     });
